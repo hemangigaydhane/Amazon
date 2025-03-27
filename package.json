@@ -1,0 +1,18 @@
+{
+  "name": "amazon",
+  "version": "1.0.0",
+  "description": "backend E-commerence project/website",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node.js",
+    "express.js",
+    "e-commerence",
+    "amazon"
+  ],
+  "author": "amazon admin",
+  "license": "ISC"
+}
