@@ -25,6 +25,19 @@ Amaon is a dynamic and feature-rich e-commerce website designed to provide a sea
  Scalability & Performance - 
    -  Built with a strong backend to handle high traffic and transactions without compromising speed.
 
-## Stack
+## Tech Stack
+ - Node.js
+ - Express.js
+ - dotenv 
+ - mongoose
+ - nodemon
 
-## API EndPoints 
+## API EndPoints  
+Users
+- /api/v1/user/create
+- /api/v1/user/getall
+- /api/v1/user/get/:id
+- /api/v1/user/delete/:id
+- /api/v1/user/update/:id
+
+## Security consideration 
