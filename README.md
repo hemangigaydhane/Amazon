@@ -38,6 +38,21 @@ Users
 - /api/v1/user/getall
 - /api/v1/user/get/:id
 - /api/v1/user/delete/:id
-- /api/v1/user/update/:id
+- /api/v1/user/update/:id 
+
+Post 
+- /api/v1/post/create
+- /api/v1/post/delete/:id
+- /api/v1/post/update/:id
+- /api/v1/post/getall
+- /api/v1/post/get/:
+
+Message
+- /api/v1/message/send
+- /api/v1/message/unsend:/id
+- /api/v1/message/get/:id
+- /api/v1/message/getall
+- /api/v1/message/read:/id
+- /api/v1/message/delete:/id
 
 ## Security consideration 
