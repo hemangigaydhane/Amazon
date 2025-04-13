@@ -2,8 +2,7 @@ import connectDB from './src/config/db.js';
 import express from 'express'
 import dotenv from 'dotenv'
 import userRoutes from './src/routes/user.routes.js'
-import postRoutes from './src/routes/posts.routes.js'
-import messageRoutes from './src/routes/message.routes.js'
+
 dotenv.config()
 
 //inialization and configuration 
@@ -18,9 +17,11 @@ app.use (express.json())
 app.use (express.urlencoded({extend: true}))
 
 //routes
-app.use ('/api/v1/user',userRoutes)
-app.use ('/api/v1/post',postRoutes)
-app.use ('/api/v1/message',messageRoutes)
+app.use ('/api/v1/user', userRoutes)
+app.use ('/api/v1/product', productRoutes)
+app.use ('/api/v1/payment',paymentRoutes)
+app.use ('/api/v1/order',orderRoutes)
+app.use ('/api/v1/cart',cartRoutes)
 
 //start the server 
 const port = process.env.port || 5001

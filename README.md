@@ -1,7 +1,7 @@
 
 # AMAZON
 
-Amaon is a dynamic and feature-rich e-commerce website designed to provide a seamless online shopping experience. Built with a robust backend, the platform ensures high performance, security, and scalability, allowing users to browse, search, and purchase a wide range of products efficiently.
+Amazon is a dynamic and feature-rich e-commerce website designed to provide a seamless online shopping experience. Built with a robust backend, the platform ensures high performance, security, and scalability, allowing users to browse, search, and purchase a wide range of products efficiently. 
 
 ## Features
  User Authentication & Security -
@@ -31,6 +31,8 @@ Amaon is a dynamic and feature-rich e-commerce website designed to provide a sea
  - dotenv 
  - mongoose
  - nodemon
+ - Multer
+ - Cloudinary
 
 ## API EndPoints  
 Users
@@ -40,19 +42,28 @@ Users
 - /api/v1/user/delete/:id
 - /api/v1/user/update/:id 
 
-Post 
-- /api/v1/post/create
-- /api/v1/post/delete/:id
-- /api/v1/post/update/:id
-- /api/v1/post/getall
-- /api/v1/post/get/:
+Product
+- /api/v1/product/create
+-	/api/v1/product/getall	
+-	/api/v1/product/get/:id
+- /api/v1/product/update/:id
+- /api/v1/product/delete/:id
+Cart 
+- /api/v1/cart/add	
+-	/api/v1/cart/get	
+- /api/v1/cart/remove/:id
 
-Message
-- /api/v1/message/send
-- /api/v1/message/unsend:/id
-- /api/v1/message/get/:id
-- /api/v1/message/getall
-- /api/v1/message/read:/id
-- /api/v1/message/delete:/id
+Order
+- /api/v1/order/create	
+-	/api/v1/order/getall	
+- /api/v1/order/user	
+-	/api/v1/order/:id
+
+Payment
+- /api/v1/payment/checkout
+
+
+
+
 
 ## Security consideration 
